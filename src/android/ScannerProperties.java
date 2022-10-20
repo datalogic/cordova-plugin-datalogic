@@ -79,7 +79,7 @@ public class ScannerProperties extends CordovaPlugin{
             cfg.put("code93", (new JSONObject()).put("enable", sp.code93.enable.get()).put("supported", sp.code93.isSupported()));
             cfg.put("composite", (new JSONObject()).put("enable", sp.composite.enable.get()).put("supported", sp.composite.isSupported()));
             cfg.put("datamatrix", (new JSONObject()).put("enable", sp.datamatrix.enable.get()).put("supported", sp.datamatrix.isSupported()));
-            cfg.put("digimarc", (new JSONObject()).put("enable", sp.digimarc.enable.get()).put("supported", sp.digimarc.isSupported()));
+            //cfg.put("digimarc", (new JSONObject()).put("enable", sp.digimarc.enable.get()).put("supported", sp.digimarc.isSupported()));
             cfg.put("discrete25", (new JSONObject()).put("enable", sp.discrete25.enable.get()).put("supported", sp.discrete25.isSupported()));
             // error on Memor 10: cfg.put("dotcode", (new JSONObject()).put("enable", sp.dotcode.enable.get()).put("supported", sp.dotcode.isSupported()));
             cfg.put("ean13", (new JSONObject()).put("enable", sp.ean13.enable.get()).put("supported", sp.ean13.isSupported()));
@@ -139,7 +139,7 @@ public class ScannerProperties extends CordovaPlugin{
             propSetEnable(cfg.code93, cfg.code93.enable, all, "code93");
             propSetEnable(cfg.composite, cfg.composite.enable, all, "composite");
             propSetEnable(cfg.datamatrix, cfg.datamatrix.enable, all, "datamatrix");
-            propSetEnable(cfg.digimarc, cfg.digimarc.enable, all, "digimarc");
+            //propSetEnable(cfg.digimarc, cfg.digimarc.enable, all, "digimarc");
             propSetEnable(cfg.discrete25, cfg.discrete25.enable, all, "discrete25");
             //propSetEnable(cfg.dotcode, cfg.dotcode.enable, all, "dotcode");
             propSetEnable(cfg.ean13, cfg.ean13.enable, all, "ean13");
